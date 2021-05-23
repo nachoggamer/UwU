@@ -74,9 +74,9 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
   var CronJob = require('cron').CronJob;
   var job = new CronJob(
-    '0 0 0 * * *',
+    '0 0 7 * * *',
     function() {
-      client.channels.cache.get(channelID).send('Parabéns <@583296716942606354> \n Não faço a minima se isto funcionou mas deve tar bem')
+      client.channels.cache.get(channelID).send('@everyone\nToca a acordar que já tá na hora comecem a preparar as trampas que temos aulas daqui a 1 hora,(se for fim de semana e eu não tiver corrigido isto ainda lamento)')
       console.log('o coiso do cron fez algo');
     },
     null,
